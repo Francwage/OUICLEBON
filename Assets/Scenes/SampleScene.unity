@@ -1222,6 +1222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerBullet: {fileID: 363561432359870922, guid: 78e77f975504cb046be1280e055eb94f, type: 3}
   playerBulletPos: {fileID: 71962517}
+  _timer: 0
 --- !u!4 &1502474816 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6967208525997326872, guid: cc6928a545634dc40a5df44568b38964, type: 3}
