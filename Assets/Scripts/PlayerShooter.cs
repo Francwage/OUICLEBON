@@ -7,7 +7,7 @@ public class PlayerShooter : MonoBehaviour
     [SerializeField] private GameObject playerBullet;
     [SerializeField] private Transform playerBulletPos;
 
-    private float _timer;
+    public float _timer;
     private GameObject _player;
 
     // Start is called before the first frame update

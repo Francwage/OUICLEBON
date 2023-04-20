@@ -4,20 +4,27 @@ using UnityEngine;
 
 public class MissileUp : MonoBehaviour
 {
-   public PlayerShooter PS;
+   public GameObject Avion;
+
+   private PlayerShooter PS;
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player"))
         {
-           if(PS._timer<=0.25)
+           if(PS._timer <= 0.25f)
            {
-                PS._timer= 0.25;
+               PS._timer= 0.25f;
            }
            else
            {
-                PS.timer = PS._timer / 2;
+               PS._timer = PS._timer / 2;
            }
         }
+    }
+
+    void Start()
+    {
+           Avion.GetComponent("PlayerShooter");
     }
 }
